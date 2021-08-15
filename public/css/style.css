@@ -1,0 +1,187 @@
+html, body {
+    scroll-behavior: smooth;
+    height: 100%;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+ .start_screen {
+    position: relative;
+    background: url(../img/background.jpg) center;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+/******************************** About me ********************************/
+
+.aboutme-shuttle {
+    display:flex;
+}
+
+.aboutme-shuttle div{
+    border: 5px black solid;
+}
+
+.shuttle-image {
+    flex: 1; 
+}
+.shuttle-image img {
+    width: 100%;
+    padding: 5%;
+    padding-left: 0%;
+}
+
+.shuttle-description {
+    flex: 2;
+    padding: 5%;
+}
+
+__________________________________
+.aboutme-camera {
+    display:flex;
+}
+
+.aboutme-camera div{
+    border: 5px black solid;
+}
+
+.camera-image {
+    flex: 1; 
+}
+.camera-image img {
+    width:100%;
+}
+
+.camera-description {
+    flex: 2;
+    padding: 5%;
+}
+
+.camera-description2 {
+    flex: 1;
+    padding: 5%;
+}
+/* .aboutme-content {
+    position: relative;
+    width: 1000px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.aboutme-content .aboutme-shuttle {
+    position: relative;
+    max-width: 450px;
+    background: #fff;
+    padding: 20px;
+    display: flex;
+}
+
+.aboutme-content .aboutme-shuttle .shuttle-image {
+    max-width: 150px;
+    flex: 0 0 150px;
+}
+
+.aboutme-content .aboutme-shuttle .shuttle-image img {
+    max-width:  100%;
+}
+
+.aboutme-content .aboutme-shuttle .photo_camera_text {
+    margin-left: 20px;
+}
+
+@media (max-width: 991px) {
+    .aboutme-content {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 768px) {
+    .aboutme-content {
+        flex-direction: column;
+    }
+
+    .aboutme-content .aboutme-shuttle {
+        flex-direction: column;
+        max-width: 350px; 
+    }
+    .aboutme-content .aboutme-shuttle .shuttle-image {
+        flex-direction: column;
+        max-width: 100%; 
+    }
+    .aboutme-content .aboutme-shuttle .shuttle-description {
+        margin-left: 0px;
+    }
+}
+*/
+
+.aboutme {
+    background: lightblue;
+    position: relative;
+    background-size: cover;
+    overflow: hidden;
+} 
+
+/*
+.aboutme_photo_camera img {
+    width:30%;
+    position: absolute;
+    display: block;
+   
+} */
+    
+/******************************** Photo Gallery ********************************/
+
+.photo_gallery {
+    padding: 2% 4% 2%;
+}
+
+.column {
+    width: 50%;
+    float: left;
+}
+
+.wrapper {
+    position: relative;
+    margin: 2%;
+    padding: 2%;
+}
+
+img {
+    transition: 0.2s;
+}
+
+img:hover {
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+}
+
+.wrapper img {
+    width: 100%;
+}
+
+/* Child Text aboutme-content */
+.wrapper div{
+    position: relative;
+    bottom: 50px;
+    left: 10px;
+    background: black;
+    color: white;
+    font-size: 1.2em;
+    font-family: 'Rubik', sans-serif;
+    margin-bottom: 10px;
+    font-family: sans-serif;
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: visibility 0s, opacity 0.5s linear; 
+    transition: visibility 0s, opacity 0.5s linear;
+}
+
+.wrapper:hover div{
+    width: 150px;
+    padding: 8px 15px;
+    visibility: visible;
+    opacity: 0.7; 
+}
